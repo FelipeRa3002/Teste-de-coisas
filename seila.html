@@ -6,11 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sou Tímido</title>
+    <!--Aqui é o "icone" do site-->
+    <link rel="shortcut icon" type="imagex/png" href="casal.jpg">
 </head>
 
 <body>
     <div id="conteudo">
-        <h2>Quer ir no parque de diversão,comigo?</h2>
+        <audio controls="controls" >
+            <!--Música :) Eu vou me arrepender disso-->
+            <source src="Destinos Traçados (Animes) - Part. Felícia Rock -(MP3_160K).mp3" type="audio/mp3">
+        </audio>
+        <a href="https://www.youtube.com/watch?v=N3idL2C0lwk">Para ouvir a música orginal.</a>
+        <h1>Quer ir no parque de diversão,comigo?</h1>
         <div style="margin: auto;width: 170px;">
             <button style="position: fixed;display: block;" class="btn" onclick="sim()" id="sim">SIM</button>
             <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)" style="position: absolute;">NÃO</button>
@@ -18,8 +25,17 @@
     </div>
 </body>
 <style>
+    a{
+        color: blueviolet;
+        font-size: large;
+    }
+    body{
+        /*Aqui é a imagem de fundo*/
+        background-image: url(fundo.jpg);
+        background-repeat: no-repeat;
+        background-size:100%;
+    }
     #conteudo {
-        background: pink;
         width: 100%;
         height: 100%;
         position: fixed;
@@ -41,6 +57,9 @@
         padding: 10px;
         width: 80px;
         border-radius: 5px;
+    }
+    h1{
+        color: aquamarine;
     }
 </style>
 
