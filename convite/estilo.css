@@ -1,0 +1,47 @@
+a{
+    color: blueviolet;
+    font-size: large;
+}
+body{
+    /*Aqui é a imagem de fundo*/
+    background-image: url(fundo.jpg);
+    background-repeat: repeat;
+    background-size:100%;
+}
+#conteudo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+}
+button#sim{
+    background-color: green;
+}
+button#sim:hover{
+    background-color: pink;  
+}
+button#nao:hover{
+    opacity: 0;
+}
+button#nao{
+    background-color: #ff7a7a;
+}
+.btn {
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80px;
+    border-radius: 5px;
+}
+@font-face {
+    font-family: "fonte";
+    src: url(Dreamhearts_DEMO.otf);
+}
+h1{
+    color: aquamarine;
+    font-family: "fonte", Courier, monospace;
+}
