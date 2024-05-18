@@ -9,6 +9,7 @@ body{
     background-repeat: repeat;
     background-size:cover;
     height:100vh;
+    background-position: center center;
 }
 #conteudo {
     width: 100%;
