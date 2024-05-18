@@ -48,4 +48,4 @@ h1{
     color: aquamarine;
     font-family: "fonte", Courier, monospace;
 }
-audio{ opacity: 0.1;} audio:hover{opacity: 1;}
+audio{ opacity: 0.1;} audio:hover{opacity: 1;background-color: pink;}
