@@ -45,7 +45,7 @@ button#nao{
     src: url(Dreamhearts_DEMO.otf);
 }
 h1{
-    color: aquamarine;
+    color: black;
     font-family: "fonte", Courier, monospace;
 }
 audio{ opacity: 0.1;} audio:hover{opacity: 1;}
