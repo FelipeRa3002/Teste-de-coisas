@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --cor-principal : #ffffff;
+    --cor-secundario: #C0C0c0;
+    /*Cor do botão*/
+    --cor1 : #167bf7;
+    
+    /*Cor de fundo*/
+    --cor2: #00030c;
+
+    /*fonte*/
+    --fonte-principal: 'Inter';
+
+}
+
+body{
+    background: var(--cor2);
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size:20px;
+    font-weight: 400;
+}
+.container__titulo{
+    color: var(--cor-principal);
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+section.Principal{
+    background: var(--cor2) url("../Imagens/Background.png") no-repeat ;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__botao{
+    background-color: var(--cor1);
+    border-radius: 6px;
+    padding: 1em;
+    color: var(--cor-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+   
+}
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-principal);}
+.container__aviso{font-size:16px; color: var(--cor-secundario);
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.imagem__secundario{
+    width: 80%;
+}
+.Secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+h2.descricao_titulo{
+    font-weight: 700;font-size: 48px;color: var(--cor-principal);margin-bottom: 0.2em;
+}
+.container_descricao1{
+    margin-left: 2em;
+}
+p.descricao_titulo{
+    color: var(--cor-secundario);margin-bottom: 1em;
+}
+section.Secundario > img.imagem__secundario{
+    margin-left: 2em;
+    width: 100%;
+}
+section.Secundario > div.container_descricao > a.container__botao{
+    width: 10em;
+}
+h3.lista__item{
+    font-weight: 700;font-size: 34px;color: var(--cor-principal);margin-bottom: 0.2em;
+}
+.dispositivos_lista{display: flex;justify-content: center;list-style-type: none;} .section_dos_aparelhos_com_imagem{text-align: center;} .rodape{margin-top: 2em;font-size: 18px;text-align: center;} 
+.rodape__link{display: flex;list-style-type: none;margin-top: 1em;} .link_lista>a{color: #ffffff;text-decoration: none;font-size: 20px; margin-left: 1em;} .link_lista>a:hover{color:blue;}
+#mexer_link{margin-left: 8em;}
