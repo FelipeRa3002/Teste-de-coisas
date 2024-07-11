@@ -1,0 +1,31 @@
+.cabeçalho_menu-hamburguer{width: 24px;height: 24px;background: url("../imagens/Menu.svg") no-repeat center;display: inline-block;}
+.cabeçalho{background-color: var(--cor-branco);display: flex;justify-content: space-between;align-items: center;position: relative;}
+.container{display: flex;align-items: center;}
+.container_img{padding: 1em;}
+.container_botao{display: none;} .container_botao:checked ~ .lista-menu{display: block; width: auto;}
+.lista-menu{display: none;position: absolute;top:100%;width: 60vw;}
+.lista-menu_titulo,.lista-menu_item{background-color: var(--cor-branco);padding: 1em;} .lista-menu_titulo:hover {background: var(--azul-degrade);color: var(--cor-branco);}
+.lista-menu_titulo{color:var( --cor-laranja);font-weight:700; font-size: 24px;}
+.lista-menu_link{background: var(--azul-degrade);-webkit-background-clip: text; -webkit-text-fill-color: transparent;background-clip: text;text-transform: uppercase;text-decoration: none;}  .lista-menu_link:hover{background: var(--cor-branco);-webkit-background-clip: text; -webkit-text-fill-color: transparent;background-clip: text;} .lista-menu_item:hover{background: #eeb006;}
+h1.container__titulo,ul.opcoes{display: none;}
+p.container__texto{display: none;}
+.container_botao:checked~.container__rotulo>.cabeçalho_menu-hamburguer{
+    background-image: url("../imagens/Menu\ Aberto.svg");
+}
+.container_botao:checked~.container__rotulo{background: var(--azul-degrade);}
+/*telas maiores*/
+@media screen and (min-width: 1024px) {
+    h1.container__titulo,.container__titulo-negrito{display: block;font-family: var(--fonte-segundaria);font-size: 30px;}
+    .container__titulo-negrito{font-weight: 700;}
+    ul.opcoes{display: flex;justify-content: space-between;}
+    li.opcoes__item,a.opcoes__link{padding-left: 2em;text-decoration: none;color: rgba(0,0,0,1);} 
+    .container_img_none{display: none;}
+    .container_img_logo{margin-left: 2em;}
+    .opcoes__item:hover,.opcoes__link:hover{color: var(--cor-laranja);}
+}
+@media screen and (min-width:1728px) {
+    .container__link__texto{display: flex;align-items: center;text-decoration: none;color: rgba(0, 0, 0, 1);}
+    p.container__texto{display: block;font-size: 20px;}
+    .cabeçalho{padding: 0 2em;}
+    .opcoes{margin-right: auto;}
+}
