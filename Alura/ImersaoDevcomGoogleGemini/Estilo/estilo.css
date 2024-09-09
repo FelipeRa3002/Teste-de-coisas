@@ -98,13 +98,12 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 1rem; /* Tamanho da fonte */
 }
 .imagensdospersonagens{width: 200px;height: 200px;}
-nav{background-color: #45474B;width: 100%; text-align: center;padding: 1.2em 0;} 
-nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10px; margin: auto 8px;}
+#botoes{width: 100%;}
+nav{background-color: #45474B;width: 100%; text-align: center;padding: 1.2em 0;} nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10px; margin: auto 8px;}
 @media only screen and (max-width: 768px) {
     body{ text-align: center;position: fixed; }
     header h1 {
@@ -125,5 +124,5 @@ nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10p
     nav{width: 100%;padding: auto 100%;}
     nav>a{padding: 4px;}
     #botoes{width:100%;margin:2em;background-color: #45474B;padding-top:2em;}
-    foot
+    footer{margin-top:2em}
   }
