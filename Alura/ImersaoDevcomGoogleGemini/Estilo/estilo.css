@@ -124,6 +124,6 @@ nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10p
     div.item-resultado{width: 300px;margin:0.5em}
     nav{width: 100%;padding: auto 100%;}
     nav>a{padding: 4px;}
-    #botoes{width:100%;margin-top:2em}
+    #botoes{width:100%;margin:2em;background-color: #45474B;padding-top:2em;}
     foot
   }
