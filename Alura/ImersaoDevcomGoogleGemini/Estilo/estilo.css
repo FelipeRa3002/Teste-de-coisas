@@ -103,4 +103,27 @@ footer {
     font-size: 1rem; /* Tamanho da fonte */
 }
 .imagensdospersonagens{width: 200px;height: 200px;}
-nav{background-color: #45474B;width: 100%; text-align: center;padding: 1.2em 0;} nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10px; margin: auto 8px;}
+nav{background-color: #45474B;width: 100%; text-align: center;padding: 1.2em 0;} 
+nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10px; margin: auto 8px;}
+@media only screen and (max-width: 768px) {
+    
+    header h1 {
+      font-size: 1.2rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav a {
+      margin-bottom: 0.5rem;
+    }
+  
+    #campo-pesquisa,
+    button {
+      width: 40%;
+    }
+    div.item-resultado{width: 300px;}
+    nav>a{padding: 4px;}
+  }
