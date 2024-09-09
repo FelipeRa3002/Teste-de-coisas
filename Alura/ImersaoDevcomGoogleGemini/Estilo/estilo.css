@@ -106,9 +106,10 @@ footer {
 nav{background-color: #45474B;width: 100%; text-align: center;padding: 1.2em 0;} 
 nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10px; margin: auto 8px;}
 @media only screen and (max-width: 768px) {
-    
+    body{ text-align: center;overflow-x: hidden;overflow-y:hidden;}
     header h1 {
       font-size: 1.2rem;
+      margin:1.5em;
     }
   
     nav {
@@ -122,8 +123,11 @@ nav>a{text-decoration: none; border: 1px solid; border-radius: 10px;padding: 10p
   
     #campo-pesquisa,
     button {
-      width: 40%;
+        margin: 1em;
+        width: 30%;
     }
     div.item-resultado{width: 300px;}
+    nav{width: 100%;padding: auto 100%;}
     nav>a{padding: 4px;}
+    #botoes{width:100%;}
   }
