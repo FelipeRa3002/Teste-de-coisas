@@ -1,0 +1,55 @@
+@charset "UTF-8";
+body{background: gray url("../Imagens/Fundos/Fundo\ \(3\).png") no-repeat; background-size: cover;margin: 0;
+    padding: 0; color: #FFA500;
+}
+footer,header,main{text-align: center;}
+main{margin-bottom: 1.5em ;}
+footer,main{margin-top: 1.5em;}
+.imagensderedes{width: 50px;height: 50px;border-radius: 50%;margin: 0.5em auto;}
+.textodofooter,div>p.textodofooter{text-align: center;font-size: 1.4em;}
+#Caixa_de_Texto_livre {
+    width: 400px;
+    height: 50px;
+    padding: 10px;
+}
+#Telefone_usuario{
+    overflow: hidden;
+}
+label {
+    display: block;
+    margin-bottom: 20px;
+}
+input{
+    margin: 1.5em auto;
+    border-radius: 10px;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#div_formulário{width: 60%; margin: 5em auto;border-radius: 10px; background-image: url("../Imagens/Fundos/Fundo\ \(2\).png");background-repeat: no-repeat;background-size: cover; background-position: center center;}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+h1{color: yellow; font-size: 2em;}
+blue{color:#2d8de7;}
+@media screen and (max-width: 600px){
+ header{width: 130%;}
+ #Caixa_de_Texto_livre {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+}
+}

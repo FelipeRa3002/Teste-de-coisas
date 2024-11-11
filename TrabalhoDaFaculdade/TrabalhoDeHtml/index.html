@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem de Bicicleta</title>
+    <link rel="stylesheet" href="Estilos/styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Monte Sua Bicicleta</h1>
+        <nav>
+            <a href="#frame" onclick="ocultaitem(0)">Quadro</a>
+            <a href="#wheels" onclick="ocultaitem(1)">Rodas</a>
+            <a href="#seat" onclick="ocultaitem(2)">Assento</a>
+            <a href="#handlebar" onclick="ocultaitem(3)">Guidão</a>
+            <a href="#brake" onclick="ocultaitem(4)">Freio</a>
+            <a href="#pedal" onclick="ocultaitem(5)">Pedal</a>
+            <a href="#chain" onclick="ocultaitem(6)">Corrente</a>
+            <a href="Paginasextras/Contato.html">Contato</a>
+            <a href="Paginasextras/Sobreosite.html">Mini Explicação</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="piece" id="frame">
+            <h2>Quadro</h2>
+            <div class="options">
+                <div class="option">
+                    <label for="frame1">
+                        <img src="Imagens/Quadro/quadro1.jpg" alt="Quadro 1">
+                        <p>Quadro 1 - R$500</p>
+                        <input type="radio" name="frame" value="500" data-img="Imagens/Quadro/quadro1.jpg" id="frame1">
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="frame2">
+                    <img src="Imagens/Quadro/quadro2.jpg" alt="Quadro 2">
+                    <p>Quadro 2 - R$700</p>
+                    <input type="radio" name="frame" value="700" data-img="Imagens/Quadro/quadro2.jpg" id="frame2">
+                   </label>
+                </div>
+                <div class="option">
+                    <label for="frame3">
+                    <img src="Imagens/Quadro/quadro3.jpg" alt="Quadro 3">
+                    <p>Quadro 3 - R$900</p>
+                    <input type="radio" name="frame" value="900" data-img="Imagens/Quadro/quadro3.jpg" id="frame3"></label>
+                </div>
+                <div class="option">
+                    <label for="frame4">
+                    <img src="https://brciclismo.com.br/wp-content/uploads/2020/07/quadro-mtb-bmc-team-elite-01-carbono-preto-tam-16.jpg" alt="Quadro 4">
+                    <p>Quadro 4 - R$1100</p>
+                    <input type="radio" name="frame" value="1100" data-img="https://brciclismo.com.br/wp-content/uploads/2020/07/quadro-mtb-bmc-team-elite-01-carbono-preto-tam-16.jpg" id="frame4"></label>
+                </div>
+                <div class="option">
+                    <label for="frame5">
+                    <img src="https://th.bing.com/th/id/OIP.9ww5cSVT9-Ol3fE-X_pb1wHaHa?rs=1&pid=ImgDetMain" alt="Quadro 5">
+                    <p>Quadro 5 - R$1300</p>
+                    <input type="radio" name="frame" value="1300" data-img="https://th.bing.com/th/id/OIP.9ww5cSVT9-Ol3fE-X_pb1wHaHa?rs=1&pid=ImgDetMain" id="frame5">
+                </label>
+                </div>
+                <div class="option">
+                    <label for="frame6">
+                    <img src="https://down-br.img.susercontent.com/file/br-11134207-7qukw-lgcgr78fa70e90" alt="Quadro 6">
+                    <p>Quadro 6 - R$1500</p>
+                    <input type="radio" name="frame" value="1500" data-img="https://down-br.img.susercontent.com/file/br-11134207-7qukw-lgcgr78fa70e90" id="frame6">
+                    </label>
+                </div>
+            </div>
+            <div class="divlinkssaibamais">
+            <button><a href="Paginasextras/Quadro.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Quadro</a></button>
+            </div>
+        </div>
+        <div class="piece" id="wheels">
+            <h2>Rodas</h2>
+            <div class="options">
+                <div class="option">
+                    <label for="wheels1">
+                    <img src="Imagens/Rodas/Roda1.jpg" alt="Rodas 1">
+                    <p>Rodas 1 - R$300</p>
+                    <input type="radio" name="wheels" value="300" data-img="Imagens/Rodas/Roda1.jpg" id="wheels1"></label>
+                </div>
+                <div class="option">
+                    <label for="wheels2">
+                    <img src="Imagens/Rodas/Roda2.jpg" alt="Rodas 2">
+                    <p>Rodas 2 - R$400</p>
+                    <input type="radio" name="wheels" value="400" data-img="Imagens/Rodas/Roda2.jpg" id="wheels2"></label>
+                </div>
+                <div class="option">
+                    <label for="wheels3">
+                    <img src="Imagens/Rodas/Roda3.jpg" alt="Rodas 3">
+                    <p>Rodas 3 - R$500</p>
+                    <input type="radio" name="wheels" value="500" data-img="Imagens/Rodas/Roda3.jpg" id="wheels3"></label>
+                </div>
+                <div class="option">
+                    <label for="wheels4">
+                        <img src="https://ae01.alicdn.com/kf/HTB1eJA8XIrHK1JjSspfq6zsrXXaO/MTB-Aro-6-raios-rodas-26-polegadas-jantes-de-bicicleta-de-Montanha-Roda-de-Bicicleta-mountain.jpg" alt="Rodas 4">
+                        <p>Rodas 4 - R$600</p>
+                        <input type="radio" name="wheels" value="600" data-img="https://ae01.alicdn.com/kf/HTB1eJA8XIrHK1JjSspfq6zsrXXaO/MTB-Aro-6-raios-rodas-26-polegadas-jantes-de-bicicleta-de-Montanha-Roda-de-Bicicleta-mountain.jpg" id="wheels4">
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="wheels5">
+                        <img src="https://th.bing.com/th/id/R.134039b8c3733c9be6fb5ea00b38ee74?rik=U9QD1pQFSUubTA&riu=http%3a%2f%2fimage.made-in-china.com%2f2f0j10wZtQWDpKHGbk%2f-rodas-de-bicicleta-tubulares-do-carbono-de-88mm-.jpg&ehk=29Ft01Xw%2fRIgoNWiy%2bINlKRUME5h6xCKgF6P1qom%2bgc%3d&risl=&pid=ImgRaw&r=0" alt="Rodas 5">
+                        <p>Rodas 5 - R$700</p>
+                        <input type="radio" name="wheels" value="700" data-img="https://th.bing.com/th/id/R.134039b8c3733c9be6fb5ea00b38ee74?rik=U9QD1pQFSUubTA&riu=http%3a%2f%2fimage.made-in-china.com%2f2f0j10wZtQWDpKHGbk%2f-rodas-de-bicicleta-tubulares-do-carbono-de-88mm-.jpg&ehk=29Ft01Xw%2fRIgoNWiy%2bINlKRUME5h6xCKgF6P1qom%2bgc%3d&risl=&pid=ImgRaw&r=0" id="wheels5">
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="wheels6">
+                        <img src="https://thumbs.dreamstime.com/b/roda-de-bicicleta-12435547.jpg" alt="Rodas 6">
+                        <p>Rodas 6 - R$800</p>
+                        <input type="radio" name="wheels" value="800" data-img="https://thumbs.dreamstime.com/b/roda-de-bicicleta-12435547.jpg" id="wheels6">
+                    </label>
+                </div>
+            </div>
+            <div class="divlinkssaibamais">
+             <button><a href="Paginasextras/Rodas.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Rodas</a></button>
+            </div>
+        </div>
+        <div class="piece" id="seat">
+            <h2>Assento</h2>
+            <div class="options">
+                <div class="option">
+                    <label for="seat1">
+                    <img src="Imagens/Assento/Assento1.jpg" alt="Assento 1">
+                    <p>Assento 1 - R$100</p>
+                    <input type="radio" name="seat" value="100" data-img="Imagens/Assento/Assento1.jpg" id="seat1"></label>
+                </div>
+                <div class="option">
+                    <label for="seat2">
+                    <img src="Imagens/Assento/Assento2.jpg" alt="Assento 2">
+                    <p>Assento 2 - R$150</p>
+                    <input type="radio" name="seat" value="150" data-img="Imagens/Assento/Assento2.jpg" id="seat2"></label>
+                </div>
+                <div class="option">
+                    <label for="seat3">
+                    <img src="Imagens/Assento/Assento3.jpg" alt="Assento 3">
+                    <p>Assento 3 - R$200</p>
+                    <input type="radio" name="seat" value="200" data-img="Imagens/Assento/Assento3.jpg" id="seat3"></label>
+                </div>
+                <div class="option">
+                    <label for="seat4">
+                        <img src="https://images-americanas.b2w.io/produtos/2684618564/imagens/assento-de-bicicleta-em-gel-selas-de-bicicleta-almofada-de-espuma-de-memoria-projetada-em-couro-acolchoado/2684618564_1_xlarge.jpg" alt="Assento 4">
+                        <p>Assento 4 - R$250</p>
+                        <input type="radio" name="seat" value="250" data-img="https://images-americanas.b2w.io/produtos/2684618564/imagens/assento-de-bicicleta-em-gel-selas-de-bicicleta-almofada-de-espuma-de-memoria-projetada-em-couro-acolchoado/2684618564_1_xlarge.jpg" id="seat4">
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="seat5">
+                        <img src="https://m.media-amazon.com/images/I/61W177nPTfL._AC_SL1001_.jpg" alt="Assento 5">
+                        <p>Assento 5 - R$300</p>
+                        <input type="radio" name="seat" value="300" data-img="https://m.media-amazon.com/images/I/61W177nPTfL._AC_SL1001_.jpg" id="seat5">
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="seat6">
+                        <img src="https://m.media-amazon.com/images/I/61DMqrxn9WL._AC_SX679_.jpg" alt="Assento 6">
+                        <p>Assento 6 - R$350</p>
+                        <input type="radio" name="seat" value="350" data-img="https://m.media-amazon.com/images/I/61DMqrxn9WL._AC_SX679_.jpg" id="seat6">
+                    </label>
+                </div>
+               </div>
+                <div class="divlinkssaibamais">
+                    <button><a href="Paginasextras/Assento.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Assento</a></button>
+                </div>
+        </div>
+        <div class="piece" id="handlebar">
+            <h2>Guidão</h2>
+            <div class="options">
+                <div class="option">
+                    <label for="Guidao1">
+                    <img src="https://th.bing.com/th?id=OPHS.WDMrAWAfN4hMHg474C474&w=248&h=248&c=17&o=5&pid=21.1" alt="Guidão 1">
+                    <p>Guidão 1 - R$700</p>
+                    <input type="radio" name="handlebar" value="700" data-img="https://th.bing.com/th?id=OPHS.WDMrAWAfN4hMHg474C474&w=248&h=248&c=17&o=5&pid=21.1" id="Guidao1"></label>
+                </div>
+                <div class="option">
+                    <label for="Guidao2">
+                    <img src="https://th.bing.com/th?id=OPHS.GToCzaQVPS4dMQ474C474&w=248&h=248&c=17&o=5&pid=21.1" alt="Guidão 2">
+                    <p>Guidão 2 - R$350</p>
+                    <input type="radio" name="handlebar" value="350" data-img="https://th.bing.com/th?id=OPHS.GToCzaQVPS4dMQ474C474&w=248&h=248&c=17&o=5&pid=21.1" id="Guidao2"></label>
+                </div>
+                <div class="option">
+                    <label for="Guidao3">
+                    <img src="https://th.bing.com/th?id=OPHS.H9TLyohySn%2bdAg474C474&w=248&h=248&o=5&pid=21.1" alt="Guidão 3">
+                    <p>Guidão 3 - R$500</p>
+                    <input type="radio" name="handlebar" value="500" data-img="https://th.bing.com/th?id=OPHS.H9TLyohySn%2bdAg474C474&w=248&h=248&o=5&pid=21.1" id="Guidao3"></label>
+                </div>
+                <div class="option">
+                    <label for="Guidao4">
+                        <img src="https://www.ciadopedal.com.br/6959-thickbox_default/guidao-clip-on-synop-hf-tt-420mm-pro.jpg" alt="Guidão 4">
+                        <p>Guidão 4 - R$600</p>
+                        <input type="radio" name="handlebar" value="600" data-img="https://www.ciadopedal.com.br/6959-thickbox_default/guidao-clip-on-synop-hf-tt-420mm-pro.jpg" id="Guidao4">
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="Guidao5">
+                        <img src="https://brciclismo.com.br/wp-content/uploads/2020/07/guidao-marcel-kittel-specialized-venge-vias-tdf-bike.jpg" alt="Guidão 5">
+                        <p>Guidão 5 - R$450</p>
+                        <input type="radio" name="handlebar" value="450" data-img="https://brciclismo.com.br/wp-content/uploads/2020/07/guidao-marcel-kittel-specialized-venge-vias-tdf-bike.jpg" id="Guidao5">
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="Guidao6">
+                        <img src="https://i.ytimg.com/vi/iapCASeyBJE/maxresdefault.jpg" alt="Guidão 6">
+                        <p>Guidão 6 - R$550</p>
+                        <input type="radio" name="handlebar" value="550" data-img="https://i.ytimg.com/vi/iapCASeyBJE/maxresdefault.jpg" id="Guidao6">
+                    </label>
+                </div>
+                
+               </div>
+                <div class="divlinkssaibamais">
+                    <button><a href="Paginasextras/Guidao.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Guidão</a></button>
+                </div>
+        </div>
+        <div class="piece" id="brake"> 
+            <h2>Freio de Bike</h2> 
+            <div class="options"> 
+                <div class="option"> 
+                    <label for="brake1"> 
+                        <img src="https://www.saraivaconteudo.com.br/review/wp-content/uploads/2023/01/b35c6b257ad38a15c5472bb5b7a0ff98.jpg" alt="Freio 1"> 
+                        <p>Freio 1 - R$200</p> 
+                        <input type="radio" name="brake" value="200" data-img="https://www.saraivaconteudo.com.br/review/wp-content/uploads/2023/01/b35c6b257ad38a15c5472bb5b7a0ff98.jpg" id="brake1"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="brake2"> 
+                        <img src="https://blog.doutorbicicleta.com.br/wp-content/uploads/2017/07/Freios.jpg" alt="Freio 2"> 
+                        <p>Freio 2 - R$300</p> 
+                        <input type="radio" name="brake" value="300" data-img="https://blog.doutorbicicleta.com.br/wp-content/uploads/2017/07/Freios.jpg" id="brake2"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="brake3"> 
+                        <img src="https://ae01.alicdn.com/kf/Sc6b2b04384f64f1598fe79edb66b2995U/Lebycle-mtb-alavancas-de-freio-ultra-leve-liga-alum-nio-cantilever-mountain-bike-bicicleta-mec-nica.jpg" alt="Freio 3"> 
+                        <p>Freio 3 - R$400</p> 
+                        <input type="radio" name="brake" value="400" data-img="https://ae01.alicdn.com/kf/Sc6b2b04384f64f1598fe79edb66b2995U/Lebycle-mtb-alavancas-de-freio-ultra-leve-liga-alum-nio-cantilever-mountain-bike-bicicleta-mec-nica.jpg" id="brake3"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="brake4"> 
+                        <img src="https://www.pedal.com.br/fotos/noticias/7039003f.jpg" alt="Freio 4"> 
+                        <p>Freio 4 - R$500</p> 
+                        <input type="radio" name="brake" value="500" data-img="https://www.pedal.com.br/fotos/noticias/7039003f.jpg" id="brake4"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="brake5"> 
+                        <img src="https://http2.mlstatic.com/freio-ferradura-bicicleta-speed-caloi-10-roda-700-klincher-D_NQ_NP_14110-MLB3944355598_032013-F.jpg" alt="Freio 5"> 
+                        <p>Freio 5 - R$600</p> 
+                        <input type="radio" name="brake" value="600" data-img="https://http2.mlstatic.com/freio-ferradura-bicicleta-speed-caloi-10-roda-700-klincher-D_NQ_NP_14110-MLB3944355598_032013-F.jpg" id="brake5"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="brake6"> 
+                        <img src="https://seguro.bikeregistrada.com.br/blog/wp-content/uploads/2023/02/VBraveAmazon.jpeg" alt="Freio 6"> 
+                        <p>Freio 6 - R$700</p> 
+                        <input type="radio" name="brake" value="700" data-img="https://seguro.bikeregistrada.com.br/blog/wp-content/uploads/2023/02/VBraveAmazon.jpeg" id="brake6"> 
+                    </label> 
+                </div> 
+            </div> 
+            <div class="divlinkssaibamais"> 
+                <button><a href="Paginasextras/Freio.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Freio</a></button> 
+            </div> 
+        </div>
+
+        <div class="piece oculto" id="pedal"> 
+            <h2>Pedal de Bike</h2> 
+            <div class="options"> 
+                <div class="option"> 
+                    <label for="pedal1"> 
+                        <img src="https://i5.walmartimages.com/asr/770aec3b-abc1-452d-b2eb-746e8be1b327_2.4c8137fc47e8259f7c2b5742c1b5007d.jpeg" alt="Pedal 1"> 
+                        <p>Pedal 1 - R$150</p> 
+                        <input type="radio" name="pedal" value="150" data-img="https://i5.walmartimages.com/asr/770aec3b-abc1-452d-b2eb-746e8be1b327_2.4c8137fc47e8259f7c2b5742c1b5007d.jpeg" id="pedal1"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="pedal2"> 
+                        <img src="https://down-br.img.susercontent.com/file/br-11134207-7qukw-lez0iv4igeu7f0" alt="Pedal 2"> 
+                        <p>Pedal 2 - R$250</p> 
+                        <input type="radio" name="pedal" value="250" data-img="https://down-br.img.susercontent.com/file/br-11134207-7qukw-lez0iv4igeu7f0" id="pedal2"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="pedal3"> 
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_846633-MLB31772865135_082019-F.jpg" alt="Pedal 3"> 
+                        <p>Pedal 3 - R$350</p> 
+                        <input type="radio" name="pedal" value="350" data-img="https://http2.mlstatic.com/D_NQ_NP_846633-MLB31772865135_082019-F.jpg" id="pedal3"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="pedal4"> 
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61oDlbUTtJL._AC_SX679_.jpg" alt="Pedal 4"> 
+                        <p>Pedal 4 - R$450</p> 
+                        <input type="radio" name="pedal" value="450" data-img="https://images-na.ssl-images-amazon.com/images/I/61oDlbUTtJL._AC_SX679_.jpg" id="pedal4"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="pedal5"> 
+                        <img src="https://m.media-amazon.com/images/I/61PhEiEvSML._AC_SL1500_.jpg" alt="Pedal 5"> 
+                        <p>Pedal 5 - R$550</p> 
+                        <input type="radio" name="pedal" value="550" data-img="https://m.media-amazon.com/images/I/61PhEiEvSML._AC_SL1500_.jpg" id="pedal5"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="pedal6"> 
+                        <img src="https://th.bing.com/th/id/OIP.OnRmZ_SZp7sOhsBaUTlZVAHaHa?rs=1&pid=ImgDetMain" alt="Pedal 6"> 
+                        <p>Pedal 6 - R$650</p> 
+                        <input type="radio" name="pedal" value="650" data-img="https://th.bing.com/th/id/OIP.OnRmZ_SZp7sOhsBaUTlZVAHaHa?rs=1&pid=ImgDetMain" id="pedal6"> 
+                    </label> 
+                </div> 
+            </div> 
+            <div class="divlinkssaibamais"> 
+                <button><a href="Paginasextras/Pedal.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Pedal</a></button> 
+            </div> 
+        </div>
+
+        <div class="piece oculto" id="chain"> 
+            <h2>Corrente de Bike</h2> 
+            <div class="options"> 
+                <div class="option"> 
+                    <label for="chain1"> 
+                        <img src="https://ericbike.vteximg.com.br/arquivos/ids/160167-1000-1000/Corrente-para-Bicicleta-KMC-Z410A-1-12x1-8-114-Elos-Vermelha-com-Emenda.jpg?v=637097026134070000" alt="Corrente 1"> 
+                        <p>Corrente 1 - R$100</p> 
+                        <input type="radio" name="chain" value="100" data-img="https://ericbike.vteximg.com.br/arquivos/ids/160167-1000-1000/Corrente-para-Bicicleta-KMC-Z410A-1-12x1-8-114-Elos-Vermelha-com-Emenda.jpg?v=637097026134070000" id="chain1"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="chain2"> 
+                        <img src="https://m.media-amazon.com/images/I/71cJd00+O9L._AC_SL1500_.jpg" alt="Corrente 2"> 
+                        <p>Corrente 2 - R$150</p> 
+                        <input type="radio" name="chain" value="150" data-img="https://m.media-amazon.com/images/I/71cJd00+O9L._AC_SL1500_.jpg" id="chain2"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="chain3"> 
+                        <img src="https://www.ciadopedal.com.br/26820-thickbox_default/corrente-bicicleta-116-elos-12-332-6v-hv408-kmc.jpg" alt="Corrente 3"> 
+                        <p>Corrente 3 - R$200</p> 
+                        <input type="radio" name="chain" value="200" data-img="https://www.ciadopedal.com.br/26820-thickbox_default/corrente-bicicleta-116-elos-12-332-6v-hv408-kmc.jpg" id="chain3"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="chain4"> 
+                        <img src="https://www.ciadopedal.com.br/21077-thickbox_default/corrente-bicicleta-116-12-332-ig51-tangshan.jpg" alt="Corrente 4"> 
+                        <p>Corrente 4 - R$250</p> 
+                        <input type="radio" name="chain" value="250" data-img="https://www.ciadopedal.com.br/21077-thickbox_default/corrente-bicicleta-116-12-332-ig51-tangshan.jpg" id="chain4"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="chain5"> 
+                        <img src="https://www.ciadopedal.com.br/21324-thickbox_default/corrente-bicicleta-9v-x9-color-kmc.jpg" alt="Corrente 5"> 
+                        <p>Corrente 5 - R$300</p> 
+                        <input type="radio" name="chain" value="300" data-img="https://www.ciadopedal.com.br/21324-thickbox_default/corrente-bicicleta-9v-x9-color-kmc.jpg" id="chain5"> 
+                    </label> 
+                </div> 
+                <div class="option"> 
+                    <label for="chain6"> 
+                        <img src="https://thumbs.dreamstime.com/z/corrente-azul-da-bicicleta-33152077.jpg" alt="Corrente 6"> 
+                        <p>Corrente 6 - R$350</p> 
+                        <input type="radio" name="chain" value="350" data-img="https://thumbs.dreamstime.com/z/corrente-azul-da-bicicleta-33152077.jpg" id="chain6"> 
+                    </label> 
+                </div> 
+            </div> 
+            <div class="divlinkssaibamais"> 
+                <button><a href="Paginasextras/Corrente.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Corrente</a></button> 
+            </div> 
+        </div>
+        
+        
+        
+    </div>
+    <div class="total">
+        <button onclick="calculateTotal()">Calcular Total</button>
+        <div id="result"></div>
+    </div>
+    <div id="iframediv">
+        <div id="divbotoes">
+            <button><a href="Paginasextras/Guidao.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Guidão</a></button>
+            <button><a href="Paginasextras/Assento.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Assento</a></button>
+            <button><a href="Paginasextras/Rodas.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Rodas</a></button>
+            <button><a href="Paginasextras/Quadro.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Quadro</a></button>
+            <button><a href="Paginasextras/Freio.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Freio</a></button>
+            <button><a href="Paginasextras/Pedal.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Pedal</a></button> 
+            <br> <br>
+            <button><a href="Paginasextras/Corrente.html" target="framesaibamais" class="linksaibamais">Saiba mais sobre Corrente</a></button> 
+        </div>
+        <iframe src="Paginasextras/Quadro.html" frameborder="0" name="framesaibamais" id="framesaibamais"></iframe>
+        <p class="textoextras">Espero que esteja gostando da experiência.</p>
+    </div>
+    <script src="Javascript/script.js"></script>
+</body>
+</html>

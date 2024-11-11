@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicação do Site</title>
+    <style>
+        :root { --cor1: #040C0E; /* Muito Escuro */ --cor2: #FFA500; /* Laranja */ --cor3: #04084F; /* Azul Escuro */ --cor4: #082D4F; /* Azul Médio */ --cor5: #9E9E9E; /* Cinza */ }
+        @keyframes piscar {
+            0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; }
+        }
+        body{background-color: var(--cor1);}
+        header{background-color: black;text-align: center;padding: 2em;margin-top: -1em;}
+        h1{color: aqua;}
+        nav>a{text-decoration: none;margin: auto 1em;border: solid rebeccapurple;border-radius: 2px;padding: .2em;color: whitesmoke;} 
+        nav>a:hover{color: brown;animation: piscar 1s infinite;background-color: white;}
+        nav{padding: 10px;}
+        main{background:var(--cor4) url("../Imagens/Fundos/Fundo\ \(4\).png") no-repeat;background-size: cover;width: 100%;height: 1000px;text-align: center;}
+        .pdf{margin-top: 15px;border-radius: 5px;width: 800px;height: 800px;display: none;border: 1px solid var(--cor5);}
+        main>nav>button>h2{color: var(--cor2);} main>nav>button{margin-left: 8px;}
+        .centro { display: flex; justify-content: center; align-items: center; margin-bottom: 20px; }
+        main>nav>button:hover{background-color: var(--cor3);transition: 1s;} 
+        main>nav>button>h2:hover{color: rgb(231, 16, 16);transition: 1s;}
+        main>nav>button>h2:not(:hover){transition: 10s;}
+        .linkparaBaixarzip{border-radius: 5px;padding: 8px;text-decoration: none;color:var(--cor4);background-color: var(--cor5);} .linkparaBaixarzip:hover{background-color: var(--cor3);color:var(--cor2); transition: 1s;} 
+        .linkparaBaixarzip:not(:hover){transition: 1s;}
+        @media screen and (max-width: 600px){
+            .pdf{width: 400px;height: 400px;}
+            header>nav{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);}
+            header>nav>a{margin: 15px auto;padding: 10px;}
+        }
+    </style>
+    <script>
+        function oculta(x){
+            if (x == 1 ){
+              let Mostrar = document.getElementById("pdfDaIa")
+              Mostrar.style.display = "flex"
+            }
+            if (x == 2 ){
+              let ocultar = document.getElementById("pdfDaIa")
+              ocultar.style.display = "none"
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Mini Explicação</h1>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="Contato.html">Contato</a>
+            <a href="Sobreosite.html">Mini Explicação</a>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <button onclick="oculta(1)">
+                <h2>Mostrar o Feito por AI</h2>
+            </button>
+            <button onclick="oculta(2)">
+            <h2>ocultar o PDF</h2></button>
+        </nav>
+             <div class="centro">
+                 <embed src="../Sobre roteiro/Roteiro.pdf" id="pdfDaIa" class="pdf">
+                </div>
+           <a href="../Sobre roteiro/Roteiro.zip" download="Roteiro.zip" type="application/zip" class="linkparaBaixarzip">Baixar A mini Explicação</a>
+    </main>
+</body>
+</html>
