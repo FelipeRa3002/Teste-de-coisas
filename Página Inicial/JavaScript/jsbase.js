@@ -59,6 +59,8 @@ if (ModoEscuroDoNavegadorAtivado) {
   body.classList.add('escuro');
   botao.innerHTML = '<abbr title="Modo Claro"><i class="fa-solid fa-sun botoes-menu" style="color: black;"  onmouseenter="this.style.color=\'yellow\'" onmouseleave="this.style.color=\'black\'"></i></abbr>';
   temaEscuroAtivo();
+  Mudarfaviocne(2);
+
 }
 // Função para alternar entre tema claro e escuro
 function temaEscuro(tipo) {
