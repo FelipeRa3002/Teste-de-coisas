@@ -39,7 +39,7 @@
                 <div id="Musica">
 
                 </div>
-                <p class="aviso" style="display: none;"><z>Aviso:</z>Trata-se de um projeto sujeito a alterações futuras, desenvolvido com base no material do <a href="https://www.youtube.com/watch?v=6PkfO7jrCLk&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=34" target="_blank">Curso em Vídeo</a>.</p>
+                <p class="aviso" style="display: block;"><z>Aviso:</z>Trata-se de um projeto sujeito a alterações futuras, desenvolvido com base no material do <a href="https://www.youtube.com/watch?v=6PkfO7jrCLk&list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d&index=34" target="_blank">Curso em Vídeo</a>.</p>
                 <!--minha foto de perfil e nome-->
                 <!--O link é https://avatars.githubusercontent.com/u/136349846?, pois minha intenção é que a imagem seja atualizada automaticamente sempre que eu mudar a foto de perfil do GitHub.-->
                 <img src="https://avatars.githubusercontent.com/u/136349846?" alt="Minha perfil no GitHub " class="foto">
@@ -217,54 +217,62 @@
                 <h2> <i class="fa-solid fa-user-graduate"></i> Minha formação <i class="fa-solid fa-graduation-cap"></i></h2>
 
                 <div id="informacoes-formacao">
-                    <h3 id="ano-inicio-e-conclusao">Ano de início e conclusão</h3>
+                    <h3 id="status-da-formacao">Status da formação</h3>
                     <h3 id="nome-da-instituicao">Nome da instituição</h3>
-                    <h3 id="titulacao-escolar">Titulação</h3>
+                    <h3 id="titulacao-escolar">Nível de formação</h3>
                 </div> <!--Fim das informações de formação-->
 
                 <div id="formacao-container">
 
                     <!--Primeira Formação-->
                     <div class="curso">
-                        <p class="periodo">1991 - 1994</p>
-                        <h3 class="instituicao">Escola Técnica Carioca</h3>
-                        <p class="titulacao">Técnico em Informática</p>
+                        <p class="status_atual_formacao">Completo</p>
+                        <h3 class="instituicao">Escola Municipal Dois de Julho</h3>
+                        <p class="titulacao">Educação Infantil</p>
                     </div> <!--Fim da Primeira Formação-->
 
                     <!--Segunda Formação-->
                     <div class="curso">
-                        <p class="periodo">1995 - 2020</p>
-                        <h3 class="instituicao">Faculdade de Tecnologia da Carioca</h3>
-                        <p class="titulacao">Bacharel em Ciência da Computação</p>
+                        <p class="status_atual_formacao">Completo</p>
+                        <h3 class="instituicao">Escola Municipal Edmundo Bittencourt</h3>
+                        <p class="titulacao">Ensino Fundamental I</p>
                     </div> <!--Fim da Segunda Formação-->
 
                     <!--Terceira Formação-->
                     <div class="curso">
-                        <p class="periodo">2020 - 2022</p>
-                        <h3 class="instituicao">Universidade Federal do Rio de Janeiro</h3>
-                        <p class="titulacao">Licenciatura em Informática</p>                      
+                        <p class="status_atual_formacao">Completo</p>
+                        <h3 class="instituicao">Escola Municipal Uruguai</h3>
+                        <p class="titulacao">Ensino Fundamental II</p>                      
                     </div> <!--Fim da Terceira Formação-->
 
-                                        <!--Quarta Formação-->
+                    <!--Quarta Formação-->
                     <div class="curso">
-                        <p class="periodo">2022 - 2024</p>
-                        <h3 class="instituicao">Instituto de Inteligência Artificial do Brasil</h3>
-                        <p class="titulacao">Bacharelado em Inteligência Artificial</p>
+                        <p class="status_atual_formacao">Completo</p>
+                        <h3 class="instituicao">Escola Técnica Estadual República (ETER)</h3>
+                        <p class="titulacao">Ensino Médio e Técnico em Redes de Computadores</p>
                     </div> <!--Fim da Quarta Formação-->
 
                     <!--Quinta Formação-->
                     <div class="curso">
-                        <p class="periodo">2024 - 2024</p>
-                        <h3 class="instituicao">Universidade de São Paulo (USP) - Fictício</h3>
-                        <p class="titulacao">Mestrado em Ciência de Dados e IA</p>
+                        <p class="status_atual_formacao">Atual e em andamento</p>
+                        <h3 class="instituicao">Universidade Estácio de Sá</h3>
+                        <p class="titulacao">Bacharelado em Ciência da Computação</p>
                     </div> <!--Fim da Quinta Formação-->
 
                     <!--Sexta Formação-->
+                    <!--
                     <div class="curso">
-                        <p class="periodo">2025 - 2025</p>
-                        <h3 class="instituicao">Instituto Avançado de Tecnologia</h3>
-                        <p class="titulacao">Doutorado em Deep Learning e Redes Neurais</p>                      
-                    </div> <!--Fim da Sexta Formação-->
+                        <p class="status_atual_formacao">Trancada</p>
+                        <h3 class="instituicao">Universidade Federal do Estado do Rio de Janeiro (UNIRIO)</h3>
+                        <p class="titulacao">Bacharelado em Sistemas de Informação</p>                      
+                    </div> --><!--Fim da Sexta Formação-->
+                    <!--Estrutura base para adiconar mais formações
+                    <div class="curso">
+                        <p class="status_atual_formacao">Aqui o status da formação que você deseja</p>
+                        <h3 class="instituicao">Aqui o nome da instituição</h3>
+                        <p class="titulacao">Aqui o título da formação</p>                      
+                    </div>
+                    -->
 
                 </div>
             </article> 
@@ -272,8 +280,21 @@
 
             <article id="projetos">
                 <h2> <i class="fa-solid fa-bars-progress"></i> Meus projetos <i class="fa-solid fa-list-check"></i></h2>
+                <!--Sim, eu criei essa div só para centralizar os botões de projetos-->
+                <div class="div_para_botoes_projetos">
+                    <abbr title="Projetos em HTML e CSS">
+                        <button class="Mostrar_ou_ocultar_projetos" id="botao-dos-projetos-html-e-css" onclick="Mostrar_Projetos('html')"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  /></br><p>Projetos em HTML e CSS</p></button>
+                    </abbr>
+                    <abbr title="Projetos com JavaScript">
+                        <button class="Mostrar_ou_ocultar_projetos" id="botao-dos-projetos-javascript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  /></br><p>Projetos com JavaScript</p></button>
+                    </abbr>
+                    <abbr title="Projetos com Python">
+                        <button class="Mostrar_ou_ocultar_projetos" id="botao-dos-projetos-python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  /></br><p>Projetos com Python</p></button>
+                    </abbr>
+                </div>
 
-                <div id="projeto-container">
+                <div id="projeto-container" class="html_projetos">
                     <!--Primeiro Projeto-->
                     <div class="projeto">
                         <img src="./imagens/projeto-01-videos.jpg" alt="Projeto 1" class="foto">

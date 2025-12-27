@@ -481,7 +481,7 @@ div#status #imagem-do-mexendo-no-pc{
   text-align: center;
 }
 
-#informacoes-formacao #ano-inicio-e-conclusao{
+#informacoes-formacao #status-da-formacao{
   display: flex;
   justify-content: flex-start;
 }
@@ -491,10 +491,7 @@ div#status #imagem-do-mexendo-no-pc{
   justify-content: space-around;
   align-items: center;
 }
-#informacoes-formacao #titulacao-escolar{
-  display: flex;
-  justify-content: flex-end;
-}
+
 /* Fim das configurações sobre informações de formação */
 
 #formacao-container .curso{
@@ -514,11 +511,12 @@ div#status #imagem-do-mexendo-no-pc{
  border-color: var(--destaque);
 }
 
-#formacao-container .periodo{
+#formacao-container .status_atual_formacao{
   font-weight: bold;
   font-size: .8em;
   color: var(--texto-cor);
 }
+/*Nome momento eu vou deixar oculto */
 
 #formacao-container .instituicao{
   font-weight: bold;
@@ -527,7 +525,7 @@ div#status #imagem-do-mexendo-no-pc{
 }
 /* configurações para telas menores */
 @media screen and (max-width: 1200px){
-  #informacoes-formacao,#informacoes-formacao #titulacao-escolar, #informacoes-formacao #nome-da-instituicao, #informacoes-formacao #ano-inicio-e-conclusao{
+  #informacoes-formacao,#informacoes-formacao #titulacao-escolar, #informacoes-formacao #nome-da-instituicao, #informacoes-formacao #status-da-formacao{
     display: flex;
     flex-direction: column;
   }
@@ -571,7 +569,33 @@ div#status #imagem-do-mexendo-no-pc{
   overflow: hidden;
   border-radius: 5%;
 }
-
+/* congigurações dos botões que estão dentro dos projetos */
+#projetos .Mostrar_ou_ocultar_projetos{
+  background-color: var(--destaque);
+  margin: auto 8px 10px auto;
+  padding: 3px;
+  border: 2px solid var(--texto-cor);
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+#projetos .Mostrar_ou_ocultar_projetos:hover{
+  background-color: var(--destaque-inverso);
+  color: var(--destaque);
+}
+#projetos .Mostrar_ou_ocultar_projetos p{
+  font-family: var(--letra-sub-titulo);
+  font-size: 1.23em;
+  font-weight: bold;
+}
+/*Sim, eu criei essa div só para centralizar os botões de projetos, aqui é a configuração dela */
+#projetos .div_para_botoes_projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
 /*configurações article dos projetos para telas maiores */
 @media screen and (min-width: 1200px){
   #projeto-container .projeto{
