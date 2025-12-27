@@ -33,9 +33,14 @@
   --letras-que-acho-bonita: "Pacifico", cursive;
   --fonte-para-aviso: "BBH Hegarty", cursive;
   --letra-sub-titulo: "Big Shoulders Stencil", sans-serif, cursive;
-  --link-da-Imagem : url("https://www.publicdomainpictures.net/pictures/610000/nahled/girl-adventurer-anime-character-1714888823hd7.jpg");
+  --link-da-Imagem : url("../Imagens/imagens-de-fundo-do-site/ModoClaro.jpg");
 }
 /* Fim das variáveis do sistema */
+/* .. (dois pontos) significa que a imagem de fundo está na pasta acima da pasta estilos
+link das imagens de fundo 
+claro: https://www.publicdomainpictures.net/pictures/610000/nahled/girl-adventurer-anime-character-1714888823hd7.jpg
+
+Escuro: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3f086c7-0fcb-4a86-b56c-ab720a796337/dhl8vw8-355bcafe-b0b0-41c8-a2e1-b3d7ecc19c06.png/v1/fill/w_1280,h_720,q_80,strp/cat_girl_with_red_eyes_and_black_hair_by_yuruinighcore_dhl8vw8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jM2YwODZjNy0wZmNiLTRhODYtYjU2Yy1hYjcyMGE3OTYzMzcvZGhsOHZ3OC0zNTViY2FmZS1iMGIwLTQxYzgtYTJlMS1iM2Q3ZWNjMTljMDYucG5nIiwiaGVpZ2h0IjoiPD03MjAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiIvd20vYzNmMDg2YzctMGZjYi00YTg2LWI1NmMtYWI3MjBhNzk2MzM3L3l1cnVpbmlnaGNvcmUtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.k8NjdzojuonBgD9MTHWnwLjzhB-K4IX0HDmk_4IyDQo */
 /* configurações do body escuro */
 body.escuro{
   --fundo-principal: #222222;
@@ -45,7 +50,7 @@ body.escuro{
   --destaque-inverso: #a73917;
   --caso-destaque-inverso-fica-meio-ruim: #0aff70;
   --fundo-card: #444444;
-  --link-da-Imagem : url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3f086c7-0fcb-4a86-b56c-ab720a796337/dhl8vw8-355bcafe-b0b0-41c8-a2e1-b3d7ecc19c06.png/v1/fill/w_1280,h_720,q_80,strp/cat_girl_with_red_eyes_and_black_hair_by_yuruinighcore_dhl8vw8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jM2YwODZjNy0wZmNiLTRhODYtYjU2Yy1hYjcyMGE3OTYzMzcvZGhsOHZ3OC0zNTViY2FmZS1iMGIwLTQxYzgtYTJlMS1iM2Q3ZWNjMTljMDYucG5nIiwiaGVpZ2h0IjoiPD03MjAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiIvd20vYzNmMDg2YzctMGZjYi00YTg2LWI1NmMtYWI3MjBhNzk2MzM3L3l1cnVpbmlnaGNvcmUtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.k8NjdzojuonBgD9MTHWnwLjzhB-K4IX0HDmk_4IyDQo");
+  --link-da-Imagem : url("../Imagens/imagens-de-fundo-do-site/ModoEscuro.jpg");
 }
 /* configurações do body */
 body{
@@ -539,13 +544,13 @@ div#status #imagem-do-mexendo-no-pc{
 /* Fim das configurações para telas menores */
 
 /* configurações sobre a article projetos */
-#projeto-container{
+.projeto_container, .aba_projeto{
   display: flex;
   flex-direction: column-reverse;
   gap: 20px;
 }
 
-#projeto-container .projeto{
+.projeto_container .projeto{
   background-color: var(--fundo-principal);
   display: flex;
   flex-direction: column;
@@ -556,13 +561,13 @@ div#status #imagem-do-mexendo-no-pc{
   transition: border-left-width .5s , border-color 0.5s;
 }
 
-#projeto-container .projeto:hover{
+.projeto_container .projeto:hover{
   border-left-width: 15px;
   cursor: pointer;
   border-color: var(--destaque);
 }
 
-#projeto-container .foto{
+.projeto_container .foto{
   width: 100%;
   aspect-ratio: 16/9;
   object-fit: cover;
@@ -598,44 +603,63 @@ div#status #imagem-do-mexendo-no-pc{
 }
 /*configurações article dos projetos para telas maiores */
 @media screen and (min-width: 1200px){
-  #projeto-container .projeto{
+  .projeto_container .projeto{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
   }
-  #projeto-container .projeto-info{
+  .projeto_container .projeto-info{
     width: 80%;
   }
   /*imagem do projeto */
-  #projeto-container .foto{
+  .projeto_container .foto{
     aspect-ratio: 1/1;
     width: 20%;
     max-height: 200px;
   }
 }
 /* Fim das configurações article dos projetos para telas maiores */
-
+/*ocultar tudo que eu achar necessário */
+#Aba-2-html , #Aba-3-html, #javascript-projetos{
+  display: none;
+}
+/*configurações de abas para mostrar os projetos */
+.botoes-para-aba-projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.botao-para-aba-projetos{
+  background-color: var(--destaque);
+  padding: .5em;
+  border: 2px solid var(--texto-cor);
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
 /* configurações as infromações do saiba mais dos projetos */
-#projeto-container .saiba-mais{
+.projeto_container .saiba-mais{
   font-family: var(--letras-bonitas-nome-para-skills);
   text-align: center;
 }
-#projeto-container .saiba-mais> h5{
+.projeto_container .saiba-mais> h5{
   font-size: 1.5em;
   color: var(--destaque);
   margin-bottom: 10px;
 }
-#projeto-container .saiba-mais> p , #projeto-container .saiba-mais li{
+.projeto_container .saiba-mais> p , .projeto_container .saiba-mais li{
   font-size: 1.2em;
   color: var(--texto-cor);
   margin-bottom: 10px;
 }
-#projeto-container .saiba-mais> ul{
+.projeto_container .saiba-mais> ul{
   list-style: decimal;
   padding-left: 20px;
 }
-#projeto-container .saiba-mais .github-icone:hover{
+.projeto_container .saiba-mais .github-icone:hover{
   color:black
 }
 /* Fim das configurações do saiba mais dos projetos */

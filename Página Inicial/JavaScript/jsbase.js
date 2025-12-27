@@ -6,6 +6,23 @@ const ModoEscuroDoNavegadorAtivado = window.matchMedia && window.matchMedia('(pr
 // Persistência do tema
 const temasalvo = localStorage.getItem('tema');
 temaEscuro(temasalvo === 'escuro');
+//Mudar a imagem dos projetos se necessário
+function MudarImagemdosProjetosseNecessario(x){
+  let ImagemProjetoPortfolio = document.getElementById("imagem-projeto-portfolio");
+  let imagemImersaoDevcomGoogleGemini = document.getElementById("image-ImersaoDevcomGoogleGemini");
+  let linkProjetoImersaoDevcomGoogleGemini = document.getElementById("link-projeto-ImersaoDevcomGoogleGemini"); 
+  if (x == 1){
+      ImagemProjetoPortfolio.src= "./Imagens/Imagens-dos-projetos/cursoemvideo/projeto-06-projeto_portfolio_escuro.jpeg";
+      imagemImersaoDevcomGoogleGemini.src= "./Imagens/Imagens-dos-projetos/Alura/projeto-07-projeto_escuro.jpeg";
+      linkProjetoImersaoDevcomGoogleGemini.href= "https://felipera3002.github.io/Teste-de-coisas/Alura/ImersaoDevcomGoogleGemini/index.html";
+      //Para o Claro
+  } else if (x == 2){
+      ImagemProjetoPortfolio.src= "./Imagens/Imagens-dos-projetos/cursoemvideo/projeto-06-projeto_portfolio_claro.jpeg";
+      imagemImersaoDevcomGoogleGemini.src= "./Imagens/Imagens-dos-projetos/Alura/projeto-07-projeto_claro.jpeg";
+      linkProjetoImersaoDevcomGoogleGemini.href= "https://felipera3002.github.io/Teste-de-coisas/Alura/ImersaoDevcomGoogleGemini/Paginasextras/Jujutsu.html";
+      //Para Escuro
+  }
+}
 
 //Mudar o icone da página
 function Mudarfaviocne(x){
@@ -52,6 +69,7 @@ function temaEscuro(tipo) {
     botao.innerHTML = '<abbr title="Modo Claro"><i class="fa-solid fa-sun botoes-menu" style="color: black;"  onmouseenter="this.style.color=\'yellow\'" onmouseleave="this.style.color=\'black\'"></i></abbr>';
     temaEscuroAtivo();
     Mudarfaviocne(2);
+    MudarImagemdosProjetosseNecessario(2);
     MudarGitCentral.src = "https://media1.tenor.com/m/lW_90lvxQ3IAAAAC/lum-urusei-yatsura.gif";
     //Esperar para carregar o Gif  500ms (0.5 segundos) , não precisa, mas achei legal.
     DivMudarGitCentral.style.opacity = 0 ;
@@ -63,6 +81,7 @@ function temaEscuro(tipo) {
     botao.innerHTML = '<abbr title="Modo Escuro"><i class="fa-solid fa-moon botoes-menu" style="color: black;"  onmouseenter="this.style.color=\'black\'" onmouseleave="this.style.color=\'white\'"></i></abbr>';
     temaClaroAtivo();
     Mudarfaviocne(1);
+    MudarImagemdosProjetosseNecessario(1);
     MudarGitCentral.src = "https://i.pinimg.com/originals/ce/7a/f8/ce7af890d23444939a9ed0b019dc46c6.gif";
     //Esperar para carregar o Gif  500ms (0.5 segundos) , não precisa, mas achei legal.
     DivMudarGitCentral.style.opacity = 0 ;
@@ -137,3 +156,24 @@ function iniciarMusicaQueEuGosto() {
     player.innerHTML =musicaSorteada;
 }
 iniciarMusicaQueEuGosto();
+
+//Função para mostrar as abas dos projetos
+function MostrarAbaDeProjetos(tipo, aba){
+  let Aba1 = document.getElementById("Aba-1-"+tipo); 
+  let Aba2 = document.getElementById("Aba-2-"+tipo);
+  let Aba3 = document.getElementById("Aba-3-"+tipo);
+
+  if (aba === 1) {
+    Aba1.style.display = "flex";
+    Aba2.style.display = "none";
+    Aba3.style.display = "none";
+  } else if (aba === 2) {
+    Aba1.style.display = "none";
+    Aba2.style.display = "flex";
+    Aba3.style.display = "none";
+  } else if (aba === 3) {
+    Aba1.style.display = "none";
+    Aba2.style.display = "none";
+    Aba3.style.display = "flex";
+  }
+}
