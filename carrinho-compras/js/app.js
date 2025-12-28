@@ -1,6 +1,5 @@
 let totalGeral
 limpar()
-alert("oi")
 function adicionar(){
     let Produto = document.getElementById("produto").value
     let nomeProduto = Produto.split("-")[0]
@@ -17,7 +16,7 @@ function adicionar(){
         campoTotal.textContent =  `R$ ${totalGeral}`
         document.getElementById("quantidade").value = 1
     } else{
-        alert(`Não foi possível adicionar o "${nomeProduto}" porque a quantidade selecionada é zero.`)
+        alert(`Não foi possível adicionar o ${nomeProduto} porque a quantidade selecionada é zero.`)
     }
 }
 function limpar(){
@@ -26,4 +25,5 @@ function limpar(){
     document.getElementById("valor-total").innerHTML = "R$ 0,00"
 
 }
+
 
