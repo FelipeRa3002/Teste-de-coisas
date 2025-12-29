@@ -153,6 +153,9 @@ function iniciarMusicaQueEuGosto() {
     "<div><iframe class=\"player_musica\" data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/2plbrEY59IikOBgBGLjaoe?utm_source=generator&theme=0\"  frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe> </div>"
     ,
     "<div><iframe class=\"player_musica\" data-testid=\"embed-iframe\" style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/track/0mHNjI1KD9PpqLu5wS8m4s?utm_source=generator&theme=0\"  frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe> </div>"
+    ,
+    ,
+    "<div><audio controls=\"controls\" autoplay loop class=\"player_musica\"> <source src=\"../../convite/Destinos Traçados (Animes) - Part. Felícia Rock -(MP3_160K).mp3\" type=\"audio/mp3\"> </audio></br><a href=\"https://www.youtube.com/watch?v=N3idL2C0lwk\">Para ouvir a música orginal.</a></div>"
     ];
     let musicaSorteada = listaDaMusica[Math.floor(Math.random() * listaDaMusica.length)];
     player.innerHTML =musicaSorteada;
