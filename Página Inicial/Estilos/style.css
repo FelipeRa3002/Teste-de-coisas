@@ -242,6 +242,13 @@ div#gif-que-fica-embaixo img{
 } */
 /* configurações da seção detalhes */
 /*Música*/
+/*controles do som da tag audio*/
+/* Funciona no Chrome, Edge, Safari (WebKit) */
+audio::-webkit-media-controls-panel {
+    background-color: var(--destaque-inverso);
+    color: var(--destaque);
+}
+
 #Musica>div>,#Musica{
   width: 100%;
   margin-bottom: 1px;
