@@ -558,6 +558,7 @@ div#status #imagem-do-mexendo-no-pc{
 }
 
 .projeto_container .projeto{
+  font-family: 'Times New Roman', Times, serif;
   background-color: var(--fundo-principal);
   display: flex;
   flex-direction: column;
