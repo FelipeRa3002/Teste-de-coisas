@@ -22,13 +22,26 @@
 
 /* Variáveis do sistema */
 :root{
-  --fundo-principal: #1C4AA6; 
-  --fundo-card: #38BDF2;
-  --texto-cor: #C9D94E;
-  --texto-inverso: #1C4AA6; 
-  --destaque: #F28F16; 
-  --destaque-inverso: #BF4B2B;
-  --caso-destaque-inverso-fica-meio-ruim: #38f295;
+     /* O azul marinho profundo como base sólida */
+  --fundo-principal: #1C283E; 
+  
+  /* Tom vinho/marrom escuro para camadas ou elementos de destaque profundos */
+  --fundo-card: #622123;
+
+  /* O tom creme/areia claro para o texto principal */
+  --texto-cor: #ECD2C3;
+  
+  /* O azul escuro para texto sobre elementos muito claros */
+  --texto-inverso: #1C283E; 
+
+  /* Amarelo vibrante para chamadas de ação (CTA) e ícones */
+  --destaque: #ECD84C; 
+  
+  /* Tom pêssego/bege médio para variações de botões ou bordas */
+  --destaque-inverso: #DEB69D; 
+
+  /* Cor de apoio (usando o tom mais claro para garantir leitura) */
+  --caso-destaque-inverso-fica-meio-ruim: #ECD2C3;
   --letras-bonitas-nome-para-skills: "Dancing Script", cursive;
   --letras-que-acho-bonita: "Pacifico", cursive;
   --fonte-para-aviso: "BBH Hegarty", cursive;
@@ -43,13 +56,26 @@ claro: https://www.publicdomainpictures.net/pictures/610000/nahled/girl-adventur
 Escuro: https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c3f086c7-0fcb-4a86-b56c-ab720a796337/dhl8vw8-355bcafe-b0b0-41c8-a2e1-b3d7ecc19c06.png/v1/fill/w_1280,h_720,q_80,strp/cat_girl_with_red_eyes_and_black_hair_by_yuruinighcore_dhl8vw8-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi9jM2YwODZjNy0wZmNiLTRhODYtYjU2Yy1hYjcyMGE3OTYzMzcvZGhsOHZ3OC0zNTViY2FmZS1iMGIwLTQxYzgtYTJlMS1iM2Q3ZWNjMTljMDYucG5nIiwiaGVpZ2h0IjoiPD03MjAiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiIvd20vYzNmMDg2YzctMGZjYi00YTg2LWI1NmMtYWI3MjBhNzk2MzM3L3l1cnVpbmlnaGNvcmUtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.k8NjdzojuonBgD9MTHWnwLjzhB-K4IX0HDmk_4IyDQo */
 /* configurações do body escuro */
 body.escuro{
-  --fundo-principal: #7A4956; 
-  --fundo-card: #7A4973;
-  --texto-cor: #FA7A6C;
-  --texto-inverso: #7A5749; 
-  --destaque: #FA1953;
-  --destaque-inverso: #FA5719;
-  --caso-destaque-inverso-fica-meio-ruim: #FA19DA;
+ /* O tom mais profundo para o fundo (quase preto/verde petróleo) */
+  --fundo-principal: #070D0C; 
+  
+  /* O tom roxo escuro para os cards, criando uma profundidade sutil */
+  --fundo-card: #241A26;
+
+  /* O tom rosado/nude para o texto principal, garantindo suavidade */
+  --texto-cor: #BF8E8E;
+  
+  /* O fundo escuro para textos sobre cores de destaque */
+  --texto-inverso: #070D0C; 
+
+  /* O verde sálvia como destaque principal (excelente contraste com o fundo) */
+  --destaque: #6F8858; 
+  
+  /* O tom bronze/marrom para um destaque secundário ou estado alternativo */
+  --destaque-inverso: #735A45; 
+
+  /* Reutilizando o tom rosado para suporte em legibilidade */
+  --caso-destaque-inverso-fica-meio-ruim: #BF8E8E;
   --link-da-Imagem : url("../Imagens/imagens-de-fundo-do-site/ModoEscuro.jpg");
 }
 /* configurações do body */
