@@ -83,6 +83,7 @@ if (ModoEscuroDoNavegadorAtivado) {
 function temaEscuro(tipo) {
   let MudarGitCentral = document.getElementById("Gif_central");
   let DivMudarGitCentral = document.getElementById("gif-que-fica-embaixo");
+  let GifMexendoDoPC = document.getElementById("imagem-do-mexendo-no-pc")
   if (tipo == true) {
     body.classList.add('escuro');
     botao.innerHTML = '<abbr title="Modo Claro"><i class="fa-solid fa-sun botoes-menu" style="color: black;"  onmouseenter="this.style.color=\'yellow\'" onmouseleave="this.style.color=\'black\'"></i></abbr>';
@@ -90,10 +91,13 @@ function temaEscuro(tipo) {
     Mudarfaviocne(2);
     MudarImagemdosProjetosseNecessario(2);
     MudarGitCentral.src = "https://media1.tenor.com/m/lW_90lvxQ3IAAAAC/lum-urusei-yatsura.gif";
+    GifMexendoDoPC.src  = "https://i.pinimg.com/originals/39/82/8c/39828c7dab661d0a305b43744dd9745e.gif";
     //Esperar para carregar o Gif  500ms (0.5 segundos) , não precisa, mas achei legal.
     DivMudarGitCentral.style.opacity = 0 ;
+    GifMexendoDoPC.style.opacity = 0 ;
     setTimeout(() => {
       DivMudarGitCentral.style.opacity = 1 ;
+      GifMexendoDoPC.style.opacity = 1 ;
     },500);
   } else {
     body.classList.remove('escuro');
@@ -102,13 +106,17 @@ function temaEscuro(tipo) {
     Mudarfaviocne(1);
     MudarImagemdosProjetosseNecessario(1);
     MudarGitCentral.src = "https://i.pinimg.com/originals/ce/7a/f8/ce7af890d23444939a9ed0b019dc46c6.gif";
+    GifMexendoDoPC.src = "https://i.pinimg.com/originals/ab/1a/fe/ab1afebb2fe63ede8210d53253269e52.gif";
     //Esperar para carregar o Gif  500ms (0.5 segundos) , não precisa, mas achei legal.
     DivMudarGitCentral.style.opacity = 0 ;
+    GifMexendoDoPC.style.opacity = 0 ;
     setTimeout(() => {
       DivMudarGitCentral.style.opacity = 1 ;
-    },500);
-  }
+      GifMexendoDoPC.style.opacity = 1 ;
+     },500);
+   }
 }
+
 
 botao.addEventListener('click', () => {
   const isescuro = body.classList.toggle('escuro');
