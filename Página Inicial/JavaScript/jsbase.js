@@ -307,10 +307,12 @@ function OQuemostraremSkillss(x){
         }
       });
     } else if (window.innerWidth < 1200){
+      if (x === 'certificados-meus'){
       let AbrirAbadeCerfiticados = confirm("Você deseja ver os certificados?");
       if (AbrirAbadeCerfiticados){
         window.open("Página-extras/Certificados-index.html", "_blank");
       }
+    }
     }
   
 }
