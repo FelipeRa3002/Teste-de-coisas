@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados</title>
+    <style>
+             body {
+                font-family: Arial, sans-serif;
+                height: 500px;
+                }
+            img{
+                margin-top: 1em;
+                width: 150px;
+                height: 150px;
+                padding-left: 12px;
+                margin-left: 1.5em;
+                transition: all 0.3s ease-in-out;
+                border: 1px dotted black;
+                border-radius: 8px;
+                }
+            img:hover{
+                width: 400px;
+                height: 350px;
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+            }
+            section{
+                display: grid;
+            
+            }
+    </style>
+    <script>
+        let vezes = 1;
+        function minhaFuncao(id,caminho){
+           let mudar = document.getElementById(id);
+            if(vezes % 2 == 0){
+                 mudar.src =  `../Imagens/Imagens-dos-Certificados/${caminho}/${id} frente.jpeg`;
+            }else{
+              mudar.src = `../Imagens/Imagens-dos-Certificados/${caminho}/${id} trás.jpeg`;
+            }
+            vezes++;
+        }
+        function aumentarImagem(id){
+            let dimuiroutros = document.getElementsByTagName("img");
+            for(let i = 0; i < dimuiroutros.length; i++){
+                dimuiroutros[i].style.width = "100px";
+                dimuiroutros[i].style.height = "150px";
+           }
+            let mudar = document.getElementById(id);
+            mudar.style.width = "400px";
+            mudar.style.height = "350px";
+            mudar.style.transform = "scale(1.1)";
+            mudar.style.transition = "all 0.3s ease-in-out";
+        }
+        let tempo;
+        function dimuirImagem(){
+            tempo = setTimeout(() => {
+               location.reload();
+            }, 20); 
+            
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <!-- O ID sempre deve ser o nome do arquivo da imagem, para poupar tempo-->
+        <div class=" certificados_configuracoes">
+            <img src="../Imagens/Imagens-dos-Certificados/CursoemVideo/CursoemVideohtml5.jpeg" alt="Certificado HTML5 CursoemVideo" id="CursoemVideohtml5">
+            <img src="../Imagens/Imagens-dos-Certificados/Estácio/Programação para Internet frente.jpeg" alt="Certificado Programação para Internet Estácio" onclick="minhaFuncao(id, 'Estácio')" id="Programação para Internet">
+            <img src="../Imagens/Imagens-dos-Certificados/Alura/A partir do zero HTML e CSS para projetos web frente.jpeg" alt="Certificado A partir do zero HTML e CSS para projetos web Alura" onclick="minhaFuncao(id,'Alura')" id="A partir do zero HTML e CSS para projetos web">
+        <!-- </div> --> 
+        <!-- <div class="certificados_em_python certificados_configuracoes"> --> 
+            <img src="../Imagens/Imagens-dos-Certificados/CursoemVideo/CursoemVideoPythonMundo1.jpeg" alt="Certificado Python Mundo 1 CursoemVideo" id="Python-Mundo-1">
+            <img src="../Imagens/Imagens-dos-Certificados/CursoemVideo/CursoemVideoPythonMundo2.jpeg" alt="Certificado Python Mundo 2 CursoemVideo" id="Python-Mundo-2">
+            <img src="../Imagens/Imagens-dos-Certificados/CursoemVideo/CursoemVideoPythonMundo3.jpeg" alt="Certificado Python Mundo 3 CursoemVideo" id="Python-Mundo-3">
+        </div>
+        <div class="certificados_configuracoes">
+            <img src="../Imagens/Imagens-dos-Certificados/Alura/Python aplicando a Orientação a Objetos frente.jpeg" alt="Certificado Python aplicando a Orientação a Objetos Alura" onclick="minhaFuncao(id,'Alura')" id="Python aplicando a Orientação a Objetos">
+            <img src="../Imagens/Imagens-dos-Certificados/Alura/Kanban análises para implementação frente.jpeg" alt="Certificado Kanban análises para implementação Alura" onclick="minhaFuncao(id,'Alura')" id="Kanban análises para implementação">
+            <img src="../Imagens/Imagens-dos-Certificados/Alura/SCRUM AGILIDADE EM SEU PROJETO frente.jpeg" alt="Certificado SCRUM AGILIDADE EM SEU PROJETO Alura" onclick="minhaFuncao(id,'Alura')" id="SCRUM AGILIDADE EM SEU PROJETO">
+            <img src="../Imagens/Imagens-dos-Certificados/Alura/GIT E GITHUB COMPARTILHANDO E COLABORANDO EM PROJETOS frente.jpeg" alt="Certificado GIT E GITHUB COMPARTILHANDO E COLABORANDO EM PROJETOS Alura" onclick="minhaFuncao(id,'Alura')" id="GIT E GITHUB COMPARTILHANDO E COLABORANDO EM PROJETOS">
+            <img src="../Imagens/Imagens-dos-Certificados/Alura/ChatGPT otimizando a qualidade dos resultados frente.jpeg" alt="Certificado ChatGPT otimizando a qualidade dos resultados Alura" onclick="minhaFuncao(id,'Alura')" id="ChatGPT otimizando a qualidade dos resultados">
+            <img src="../Imagens/Imagens-dos-Certificados/Alura/Iniciante em Programação G8 - ONE frente.jpeg" alt="Certificado Iniciante em Programação G8 - ONE Alura" onclick="minhaFuncao(id,'Alura')" id="Iniciante em Programação G8 - ONE">
+        </div>
+        <div class="certificados_configuracoes">
+            <img src="../Imagens/Imagens-dos-Certificados/Outros/Cisco Selo de segurança de endpoint.jpeg" alt="Selo de segurança de endpoint Cisco" id="Cisco Selo de segurança de endpoint">
+            <img src="../Imagens/Imagens-dos-Certificados/Outros/Certificado PROA.jpeg" alt="Certificado PROA de Autoconhecimento, Projeto Profissional, Racioncínio lógico e Comunicação" id="Certificado PROA">
+            <img src="../Imagens/Imagens-dos-Certificados/Outros/Certificado_-_Nivelamento(Hackers do bem) frente.jpeg" alt="Certificado Nivelamento Hackers do bem" onclick="minhaFuncao(id,'Outros')" id="Certificado_-_Nivelamento(Hackers do bem)">
+            <img src="../Imagens/Imagens-dos-Certificados/Outros/Certificado_-_básico(Hackers do bem) frente.jpeg" alt="Certificado Básico Hackers do bem" onclick="minhaFuncao(id,'Outros')" id="Certificado_-_básico(Hackers do bem)">
+        </div>
+    </section>
+</body>
+</html>
