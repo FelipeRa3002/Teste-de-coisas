@@ -6,6 +6,9 @@ const ModoEscuroDoNavegadorAtivado = window.matchMedia && window.matchMedia('(pr
 // Persistência do tema
 const temasalvo = localStorage.getItem('tema');
 temaEscuro(temasalvo === 'escuro');
+//Mudar coisas como nome da faculdade, curso e periodo atual
+//Selector vai pegar apenas o primeiro item dessa tag mas como é uma tag única não vejo problema, no momento.
+document.querySelector('periodoqueestou').textContent = "5º (quinto)" ;
 //Mudar a imagem dos projetos se necessário
 function MudarImagemdosProjetosseNecessario(x){
   let ImagemProjetoPortfolio = document.getElementById("imagem-projeto-portfolio");
