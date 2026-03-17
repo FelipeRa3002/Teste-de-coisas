@@ -1,3 +1,6 @@
+//Mudar coisas como nome da faculdade, curso e periodo atual
+//Selector vai pegar apenas o primeiro item dessa tag mas como é uma tag única não vejo problema, no momento.
+document.querySelector('periodoqueestou').textContent = "5º (quinto)" ;
 function calcularIdade(data_nascimento){
  const hoje = new Date();
  const nascimento = new Date(data_nascimento);
